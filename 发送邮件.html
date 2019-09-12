@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>邮件群发系统1.0</title>
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+        <!--excel操作-->
+        <script src="https://cdn.bootcss.com/xlsx/0.11.5/xlsx.core.min.js"></script>
+        <!--富文本编辑器-->
+        <script src="wangEditor/release/wangEditor.js"></script>
+        <!--好看的按钮https://www.bootcss.com/p/buttons/-->
+        <link rel="stylesheet" href="https://www.bootcss.com/p/buttons/css/buttons.css" type="text/css" media="all" />
+        <!--主样式-->
+        <link rel="stylesheet" href="css/index.css">
+        <style>
+            .title_input{
+                outline-style: none ;   
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    
+    <body>
+         <h1 class="center title">邮件群发系统1.0</h1>
+
+        <table id='info_table' class="">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>邮箱</th>
+                    <th>主题</th>
+                    <th>内容</th>
+                    <th>发送邮箱</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button type="button" class="button button-pill button-primary button-small marginTop" onclick="addRow()">手动添加邮件</button>
+        <button type="button" class="button button-pill button-primary button-small marginTop" onclick="sendAll()">批量发送</button><br />
+        <span class="content marginTop" title="上传的文件必须包含[邮箱]列">第一步:选择一个excel文件</span>
+        
+        <a href="javascript:;" class="file">选择文件
+            <input type="file" id="excel-file" />
+        </a>
+        <!--<input class="button" type="file" id="excel-file"></input>-->
+        
+        <br /> <span class="content step2">第二步:确定一个主题吧:</span> 
+        <input class="content step2 title_input" type="text" id="title" />
+        <br /> <span class="content step3" title="发送的格式为HTML的邮箱,第二个输入框为HTML代码的输入">第三步:写一下内容吧:</span>
+
+        <div id="div3" class="step3"></div>
+        <textarea class="step3" id="content" rows="8" cols="40"></textarea><br /> 
+        
+        <span class="content step4">第四步:点击按钮根据excel中的内容替换所有的变量，为每个人生成不同的信息</span><br />
+        <button type="button" class="step4 button button-pill button-primary" onclick="getExcel()">点击生成</button><br />
+        
+        <h3>帮助</h3>
+        <hr />
+        <p>
+            新建一个excel文档，文档的第一行为变量，可以在文本中直接使用 #变量# ，效果就是用excel中的内容替换要发送的文本中的内容。
+        </p>
+        <p>
+            excel文档中必须包含一列，列头是 邮箱 
+        </p>
+        <!--全局属性-->
+        <script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+        <!--扩展Date类型，增加format时间格式化方法-->
+        <script src="js/date.js" type="text/javascript" charset="utf-8"></script>
+        <!--wangEditor富文本编辑器，调用对象名称editor-->
+        <script src="js/editor.js" type="text/javascript" charset="utf-8"></script>
+        <!--操作table的所有操作-->
+        <script src="js/table.js" type="text/javascript" charset="utf-8"></script>
+        <!--excel相关操作，获取内容后添加到table表格-->
+        <script src="js/excel.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+
+</html>

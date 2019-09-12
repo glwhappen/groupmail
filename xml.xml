@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+    <data>
+        <server>ssl://smtp.exmail.qq.com</server>
+        <port>465</port>
+        <usermail>glw@cumt.edu.cn</usermail>
+        <user>glw@cumt.edu.cn</user>
+        <psw>M92VQ7CDZS9ZQS8F</psw>
+    </data>
+    
+    <data>
+        <server>ssl://smtp.163.com</server>
+        <port>465</port>
+        <usermail>findbug_top@163.com</usermail>
+        <user>findbug_top</user>
+        <psw>Happena1998123</psw>
+    </data>
+
+    
+</node>
+

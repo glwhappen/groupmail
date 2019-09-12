@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding:0;
+}
+.center {
+    text-align: center;
+}
+.marginTop {
+    margin-top:10px;
+}
+.title {
+    color: rgb(77, 128, 191);
+    margin:40px;
+}
+p, h3, hr{
+    color: rgb(70, 172, 200);
+}
+.content {
+    font-size: x-large;
+    color: rgb(249, 150, 59);
+    margin: 5px;
+}
+body {
+    padding-left: 10%;
+    width:80%;
+}
+textarea {
+    /*可根据需要修改有无边框显示长度和宽带 */
+    border:1px #ccc solid;
+    overflow:auto;
+    width:100%
+}
+.step2 {
+    display:none;
+}
+.step3 {
+    display:none;
+}
+.step4 {
+    display:none;
+}
+.step5 {
+    display:none;
+}
+#info_table {
+    width:100%;
+}
+#info_table, #info_table th, #info_table tr, #info_table td {
+    color:#0099CC;
+    font-size:14px;
+    border-collapse: collapse;
+    border: rgb(70, 172, 200) 1px solid;
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    background: #1B9AF7;
+    border: 1px solid #1B9AF7;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #FFF;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    cursor: pointer;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.file:hover {
+    background: #4cb0f9;
+    border-color: #1B9AF7;
+    color: #FFF;
+    text-decoration: none;
+}
