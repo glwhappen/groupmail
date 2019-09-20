@@ -3,6 +3,7 @@
 function sendAll() {
     var submitSends = document.getElementsByClassName("submitSend");
     var len = submitSends.length;
+    alert(len);
     if (len < 1) {
         alert("没有需要批量发送的邮件");
         return;

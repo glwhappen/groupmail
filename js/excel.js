@@ -27,7 +27,8 @@ var getExcel = function () {
             }) // 以二进制流方式读取得到整份excel表格对象
             var persons = []; // 存储获取到的数据
         } catch (e) {
-            console.log('文件类型不正确');
+            //console.log('文件类型不正确');
+            alert("文件类型不正确,请选择excel文件，以.xls 或者.xlsx 结尾");
             return;
         }
         // 表格的表格范围，可用于判断表头是否数量是否正确

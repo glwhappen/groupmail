@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>邮件群发系统1.0</title>
+        <title>ACM集训队邮件群发系统</title>
         <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
         <!--excel操作-->
         <script src="https://cdn.bootcss.com/xlsx/0.11.5/xlsx.core.min.js"></script>
@@ -21,7 +21,7 @@
     </head>
     
     <body>
-         <h1 class="center title">邮件群发系统1.0</h1>
+         <h1 class="center title">ACM集训队邮件群发系统</h1>
 
         <table id='info_table' class="">
             <thead>
@@ -55,12 +55,12 @@
         <span class="content step4">第四步:点击按钮根据excel中的内容替换所有的变量，为每个人生成不同的信息</span><br />
         <button type="button" class="step4 button button-pill button-primary" onclick="getExcel()">点击生成</button><br />
         
-        <h3>帮助</h3>
+        <h3 class="help">帮助</h3>
         <hr />
-        <p>
+        <p class="help">
             新建一个excel文档，文档的第一行为变量，可以在文本中直接使用 #变量# ，效果就是用excel中的内容替换要发送的文本中的内容。
         </p>
-        <p>
+        <p class="help">
             excel文档中必须包含一列，列头是 邮箱 
         </p>
         <!--全局属性-->
@@ -73,6 +73,8 @@
         <script src="js/table.js" type="text/javascript" charset="utf-8"></script>
         <!--excel相关操作，获取内容后添加到table表格-->
         <script src="js/excel.js" type="text/javascript" charset="utf-8"></script>
+        <a href="https://github.com/glwhappen/groupmail" style="position:absolute; top:0; left:0;"><img width="149" height="149" src="img/forkme_left_darkblue_121621.png" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+
     </body>
 
 </html>

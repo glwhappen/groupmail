@@ -61,7 +61,7 @@ for($email_pos = 0; $email_pos < sizeof($emailList); $email_pos++){
         exit();
     }
 }
-echo '{ "ok":"0" , "info":"邮件群发系统账号资源耗尽"}';
+echo '{ "ok":"0" , "info":"收信者邮箱错误或邮件群发系统账号资源耗尽"}';
 
     
     
